@@ -1,0 +1,9 @@
+[images]
+  remote_images = ["https://source.unsplash.com/.*", "https://images.unsplash.com/.*", "https://ext.same-assets.com/.*", "https://ugc.same-assets.com/.*", "https://seedglobalhealth.org/.*", "https://vitalrecord.tamu.edu/.*", "https://www.clemson.edu/.*", "https://www.cdc.gov/.*", "https://pxl-mayoedu.terminalfour.net/.*", "https://www.wateraid.org/.*"]
+
+[build]
+  command = "npm install && npm run build"
+  publish = "out"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
