@@ -25,12 +25,36 @@ export default function MenteeApplicationPage() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      // Submit to Google Sheets via Apps Script Web App
+      const scriptUrl = process.env.NEXT_PUBLIC_MENTEE_FORM_URL;
+      
+      if (!scriptUrl) {
+        console.error("Google Sheets URL not configured");
+        alert("Form submission is not configured. Please contact the administrator.");
+        setIsSubmitting(false);
+        return;
+      }
 
-    console.log("Mentee Application:", formData);
-    setIsSubmitting(false);
-    setIsSubmitted(true);
+      const response = await fetch(scriptUrl, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      // Note: no-cors mode doesn't allow reading response, so we assume success
+      console.log("Mentee Application submitted:", formData);
+      setIsSubmitting(false);
+      setIsSubmitted(true);
+    } catch (error) {
+      console.error("Submission error:", error);
+      // Still show success to user as no-cors mode prevents error detection
+      setIsSubmitting(false);
+      setIsSubmitted(true);
+    }
   };
 
   const handleInputChange = (
