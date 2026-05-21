@@ -155,7 +155,7 @@ async function sendEmail(to: string, subject: string, body: string) {
       'Authorization': `Bearer ${RESEND_API_KEY}`
     },
     body: JSON.stringify({
-      from: 'WBGH <onboarding@resend.dev>',
+      from: 'WBGH <noreply@t-healthsolutions.com>',
       to: [to],
       subject: subject,
       text: body
