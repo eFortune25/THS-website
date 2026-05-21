@@ -176,13 +176,13 @@ export default function WBGHPage() {
               {/* Founder Photo - Left column on desktop, top on mobile */}
               <div className="flex justify-center lg:justify-end">
                 <div className="relative">
-                  <div className="w-72 h-72 sm:w-80 sm:h-80 rounded-2xl bg-gradient-to-br from-blue-100 to-teal-100 shadow-xl overflow-hidden">
+                  <div className="w-72 h-96 sm:w-80 sm:h-[28rem] rounded-2xl bg-gradient-to-br from-blue-100 to-teal-100 shadow-xl overflow-hidden">
                     <Image
                       src="/images/wbgh/founder.jpg"
                       alt="Dr. Habakkuk Yumo, Founder of WBGH"
                       width={320}
-                      height={320}
-                      className="w-full h-full object-cover"
+                      height={448}
+                      className="w-full h-full object-contain"
                       priority
                     />
                   </div>
