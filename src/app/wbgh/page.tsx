@@ -407,6 +407,178 @@ export default function WBGHPage() {
         </div>
       </section>
 
+      {/* Pricing & Process Section */}
+      <section className="py-20 sm:py-28 bg-gradient-to-br from-blue-50 to-teal-50">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Pricing & Process
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Transparent, tailored support for every research journey.
+            </p>
+          </div>
+
+          {/* Introduction */}
+          <div className="max-w-4xl mx-auto mb-16">
+            <div className="bg-white rounded-2xl shadow-lg p-8 sm:p-12">
+              <div className="space-y-4 text-gray-700 leading-relaxed">
+                <p>
+                  Every research project is unique. The scope of work, complexity of analysis, manuscript readiness, and timeline requirements vary considerably from one project to another.
+                </p>
+                <p>
+                  For this reason, service fees are determined after an initial assessment of your needs. A detailed proposal and quotation will be provided before any work begins.
+                </p>
+                <p className="font-semibold text-gray-900">
+                  Initial application and project assessment are free of charge.
+                </p>
+                <p className="font-semibold text-gray-900">
+                  No payment is required until a service proposal and quotation have been reviewed and accepted.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* How It Works */}
+          <div className="mb-16">
+            <h3 className="text-3xl font-bold text-gray-900 mb-10 text-center">
+              How It Works
+            </h3>
+            <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+              {/* Step 1 */}
+              <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mb-4 mx-auto">
+                  1
+                </div>
+                <h4 className="font-bold text-gray-900 mb-2 text-center">Submit Application</h4>
+                <p className="text-sm text-gray-600 text-center">
+                  Complete the mentorship, statistical support, editorial service, or mentor application form.
+                </p>
+              </div>
+
+              {/* Step 2 */}
+              <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mb-4 mx-auto">
+                  2
+                </div>
+                <h4 className="font-bold text-gray-900 mb-2 text-center">Free Assessment</h4>
+                <p className="text-sm text-gray-600 text-center">
+                  Our team reviews your project, goals, timeline, and support requirements.
+                </p>
+              </div>
+
+              {/* Step 3 */}
+              <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mb-4 mx-auto">
+                  3
+                </div>
+                <h4 className="font-bold text-gray-900 mb-2 text-center">Receive Proposal & Quotation</h4>
+                <p className="text-sm text-gray-600 text-center">
+                  You receive a tailored support plan with a detailed quotation and timeline.
+                </p>
+              </div>
+
+              {/* Step 4 */}
+              <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mb-4 mx-auto">
+                  4
+                </div>
+                <h4 className="font-bold text-gray-900 mb-2 text-center">Approve & Pay</h4>
+                <p className="text-sm text-gray-600 text-center">
+                  Once you approve the proposal, a secure payment link is provided.
+                </p>
+              </div>
+
+              {/* Step 5 */}
+              <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mb-4 mx-auto">
+                  5
+                </div>
+                <h4 className="font-bold text-gray-900 mb-2 text-center">Begin Support</h4>
+                <p className="text-sm text-gray-600 text-center">
+                  Work begins with your assigned mentor, statistician, editor, or publication support specialist.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Typical Pricing Ranges */}
+          <div className="mb-16">
+            <h3 className="text-3xl font-bold text-gray-900 mb-10 text-center">
+              Typical Pricing Ranges
+            </h3>
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div className="overflow-x-auto">
+                  <table className="w-full">
+                    <thead className="bg-gradient-to-r from-blue-600 to-teal-600 text-white">
+                      <tr>
+                        <th className="px-6 py-4 text-left font-semibold">Service</th>
+                        <th className="px-6 py-4 text-left font-semibold">Typical Range (USD)</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-gray-200">
+                      <tr className="hover:bg-blue-50 transition-colors">
+                        <td className="px-6 py-4 text-gray-900">Scientific Editing</td>
+                        <td className="px-6 py-4 text-gray-700">$75 – $300</td>
+                      </tr>
+                      <tr className="hover:bg-blue-50 transition-colors">
+                        <td className="px-6 py-4 text-gray-900">Statistical Analysis</td>
+                        <td className="px-6 py-4 text-gray-700">$150 – $750+</td>
+                      </tr>
+                      <tr className="hover:bg-blue-50 transition-colors">
+                        <td className="px-6 py-4 text-gray-900">Manuscript Development & Publication Support</td>
+                        <td className="px-6 py-4 text-gray-700">$300 – $1,500+</td>
+                      </tr>
+                      <tr className="hover:bg-blue-50 transition-colors">
+                        <td className="px-6 py-4 text-gray-900">Individual Mentorship Programs</td>
+                        <td className="px-6 py-4 text-gray-700 font-semibold">Custom Quotation</td>
+                      </tr>
+                      <tr className="hover:bg-blue-50 transition-colors">
+                        <td className="px-6 py-4 text-gray-900">Institutional / Research Team Support</td>
+                        <td className="px-6 py-4 text-gray-700 font-semibold">Custom Quotation</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div className="bg-blue-50 px-6 py-4 border-t border-blue-100">
+                  <p className="text-sm text-gray-700 italic">
+                    <strong>Note:</strong> The final quotation depends on project complexity, scope of work, timeline, and support requirements.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Highlight Box */}
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-gradient-to-br from-blue-600 to-teal-600 rounded-2xl shadow-2xl p-8 sm:p-12 text-white text-center">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div className="flex flex-col items-center gap-3">
+                  <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                    <CheckCircle className="w-8 h-8 text-white" />
+                  </div>
+                  <h4 className="text-lg font-bold">Free Assessment</h4>
+                </div>
+                <div className="flex flex-col items-center gap-3">
+                  <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                    <Target className="w-8 h-8 text-white" />
+                  </div>
+                  <h4 className="text-lg font-bold">Custom Quotation</h4>
+                </div>
+                <div className="flex flex-col items-center gap-3">
+                  <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                    <CheckCircle className="w-8 h-8 text-white" />
+                  </div>
+                  <h4 className="text-lg font-bold">No Upfront Payment Required</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA Section */}
       <section className="py-20 sm:py-24 bg-gradient-to-br from-blue-700 to-teal-600 text-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
