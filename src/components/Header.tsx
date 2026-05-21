@@ -11,6 +11,7 @@ const navigation = [
   { name: "Past Projects", href: "/projects" },
   { name: "Where We Work", href: "/where-we-work" },
   { name: "Our Experts", href: "/experts" },
+  { name: "WBGH", href: "/wbgh", highlight: true },
   { name: "Work With Us", href: "/careers" },
   { name: "Contact", href: "/contact" },
 ];
@@ -42,7 +43,11 @@ export function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium text-white/90 hover:text-white transition-colors"
+                className={
+                  item.highlight
+                    ? "text-sm font-bold text-yellow-300 hover:text-yellow-200 transition-colors px-3 py-1 bg-blue-600 rounded-md"
+                    : "text-sm font-medium text-white/90 hover:text-white transition-colors"
+                }
               >
                 {item.name}
               </Link>
