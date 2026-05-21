@@ -139,7 +139,10 @@ export async function submitMenteeApplication(
       type: 'mentee',
       applicantEmail: application.email,
       applicantName: application.full_name,
-      data: application
+      data: {
+        ...application,
+        document_url: documentUrl
+      }
     });
 
     return { success: true };
@@ -184,7 +187,10 @@ export async function submitMentorApplication(
       type: 'mentor',
       applicantEmail: application.email,
       applicantName: application.full_name,
-      data: application
+      data: {
+        ...application,
+        cv_url: cvUrl
+      }
     });
 
     return { success: true };
@@ -229,7 +235,10 @@ export async function submitServiceRequest(
       type: 'service',
       applicantEmail: request.email,
       applicantName: request.full_name,
-      data: request
+      data: {
+        ...request,
+        document_url: documentUrl
+      }
     });
 
     return { success: true };
