@@ -133,12 +133,18 @@ export default function MenteeApplicationPage() {
             <WBGHLogo variant="color" />
           </div>
           <h1 className="text-4xl font-bold text-gray-900 text-center mb-4">
-            Mentee Application
+            Mentorship Program Application
           </h1>
           <p className="text-lg text-gray-600 text-center max-w-2xl mx-auto">
-            Apply for mentorship support to transform your research into a publication-ready
-            manuscript
+            Join our long-term mentorship program for comprehensive support from idea development to publication
           </p>
+          <div className="bg-blue-50 border-l-4 border-blue-600 p-4 mt-6 max-w-3xl mx-auto">
+            <p className="text-sm text-blue-900">
+              <strong>What to expect:</strong> This program provides ongoing mentorship over weeks/months, 
+              including multiple sessions with your assigned mentor to guide you through the entire research 
+              and publication process.
+            </p>
+          </div>
         </div>
 
         {/* Application Form */}

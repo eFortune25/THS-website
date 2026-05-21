@@ -148,11 +148,17 @@ export default function ServicesPage() {
               <WBGHLogo variant="color" />
             </div>
             <h1 className="text-4xl font-bold text-gray-900 text-center mb-4">
-              Request Support Services
+              Request Specific Services
             </h1>
             <p className="text-lg text-gray-600 text-center max-w-2xl mx-auto">
-              Choose the service that best fits your needs
+              Get targeted, project-based support for your immediate research needs
             </p>
+            <div className="bg-teal-50 border-l-4 border-teal-600 p-4 mt-6 max-w-3xl mx-auto">
+              <p className="text-sm text-teal-900">
+                <strong>Quick support:</strong> These services are designed for specific, short-term needs 
+                such as statistical analysis, manuscript editing, or writing assistance for a particular project.
+              </p>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

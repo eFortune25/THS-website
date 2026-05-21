@@ -42,28 +42,49 @@ export default function WBGHPage() {
           </p>
 
           {/* CTA Buttons */}
-          <div className="mt-12 flex flex-wrap justify-center gap-4">
-            <Link
-              href="/wbgh/apply"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-blue-700 rounded-lg font-semibold hover:bg-blue-50 transition-colors shadow-lg"
-            >
-              Apply as Mentee
-              <ArrowRight className="h-5 w-5" />
-            </Link>
-            <Link
-              href="/wbgh/mentors/apply"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-blue-800 text-white rounded-lg font-semibold hover:bg-blue-900 transition-colors shadow-lg border-2 border-white/20"
-            >
-              Become a Mentor
-              <Users className="h-5 w-5" />
-            </Link>
-            <Link
-              href="/wbgh/services"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-teal-600 text-white rounded-lg font-semibold hover:bg-teal-700 transition-colors shadow-lg"
-            >
-              Request Support
-              <Send className="h-5 w-5" />
-            </Link>
+          <div className="mt-12 max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              {/* Mentee Application - Long-term */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border-2 border-white/30">
+                <h3 className="text-xl font-bold text-white mb-2">Long-term Mentorship</h3>
+                <p className="text-blue-100 text-sm mb-4">
+                  Comprehensive guidance from idea to publication with ongoing support
+                </p>
+                <Link
+                  href="/wbgh/apply"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-white text-blue-700 rounded-lg font-semibold hover:bg-blue-50 transition-colors shadow-lg w-full justify-center"
+                >
+                  Apply for Mentorship Program
+                  <ArrowRight className="h-5 w-5" />
+                </Link>
+              </div>
+
+              {/* Service Request - Short-term */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border-2 border-white/30">
+                <h3 className="text-xl font-bold text-white mb-2">Specific Service Support</h3>
+                <p className="text-blue-100 text-sm mb-4">
+                  One-time or project-based help with statistics, editing, or writing
+                </p>
+                <Link
+                  href="/wbgh/services"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-teal-600 text-white rounded-lg font-semibold hover:bg-teal-700 transition-colors shadow-lg w-full justify-center"
+                >
+                  Request a Service
+                  <Send className="h-5 w-5" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Mentor CTA - Centered below */}
+            <div className="text-center">
+              <Link
+                href="/wbgh/mentors/apply"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-blue-800 text-white rounded-lg font-semibold hover:bg-blue-900 transition-colors shadow-lg border-2 border-white/20"
+              >
+                Become a Mentor
+                <Users className="h-5 w-5" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -190,24 +211,60 @@ export default function WBGHPage() {
 
       {/* Final CTA Section */}
       <section className="py-20 sm:py-24 bg-gradient-to-br from-blue-700 to-teal-600 text-white">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">
-            Ready to Turn Your Research Into Publication?
-          </h2>
-          <p className="text-xl text-blue-100 mb-10 max-w-3xl mx-auto">
-            Join researchers from around the world who are advancing global health through quality publications
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link
-              href="/wbgh/apply"
-              className="inline-flex items-center gap-2 px-10 py-5 bg-white text-blue-700 rounded-lg font-semibold hover:bg-blue-50 transition-colors shadow-xl text-lg"
-            >
-              Apply Now
-              <ArrowRight className="h-6 w-6" />
-            </Link>
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-6">
+              Ready to Turn Your Research Into Publication?
+            </h2>
+            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+              Join researchers from around the world who are advancing global health through quality publications
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            {/* Mentorship Program */}
+            <div className="bg-white rounded-xl p-8 text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <BookOpen className="h-8 w-8 text-blue-700" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Mentorship Program</h3>
+              <p className="text-gray-600 mb-6">
+                Long-term comprehensive support from experienced researchers
+              </p>
+              <Link
+                href="/wbgh/apply"
+                className="inline-flex items-center gap-2 px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors w-full justify-center"
+              >
+                Apply for Mentorship
+                <ArrowRight className="h-5 w-5" />
+              </Link>
+            </div>
+
+            {/* Service Request */}
+            <div className="bg-white rounded-xl p-8 text-center">
+              <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Send className="h-8 w-8 text-teal-700" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Specific Services</h3>
+              <p className="text-gray-600 mb-6">
+                One-time support for statistics, editing, or manuscript development
+              </p>
+              <Link
+                href="/wbgh/services"
+                className="inline-flex items-center gap-2 px-8 py-3 bg-teal-600 text-white rounded-lg font-semibold hover:bg-teal-700 transition-colors w-full justify-center"
+              >
+                Request a Service
+                <Send className="h-5 w-5" />
+              </Link>
+            </div>
+          </div>
+
+          {/* Contact CTA */}
+          <div className="text-center">
+            <p className="text-blue-100 mb-4">Have questions or need guidance on which option is right for you?</p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-10 py-5 bg-blue-800 text-white rounded-lg font-semibold hover:bg-blue-900 transition-colors shadow-xl text-lg border-2 border-white/30"
+              className="inline-flex items-center gap-2 px-8 py-3 bg-blue-800 text-white rounded-lg font-semibold hover:bg-blue-900 transition-colors border-2 border-white/30"
             >
               Contact Us
             </Link>
