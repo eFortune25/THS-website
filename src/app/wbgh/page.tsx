@@ -63,14 +63,14 @@ export default function WBGHPage() {
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border-2 border-white/30">
                 <h3 className="text-xl font-bold text-white mb-2">Specific Service Support</h3>
                 <p className="text-blue-100 text-sm mb-4">
-                  One-time or project-based help with statistics, editing, or writing
+                  Expert statistical analysis, scientific editing, manuscript formatting, and publication support tailored to your research needs.
                 </p>
                 <Link
                   href="/wbgh/services"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-teal-600 text-white rounded-lg font-semibold hover:bg-teal-700 transition-colors shadow-lg w-full justify-center"
+                  className="inline-flex items-center gap-2 px-5 py-3 bg-teal-600 text-white rounded-lg font-semibold hover:bg-teal-700 transition-colors shadow-lg w-full justify-center text-sm sm:text-base"
                 >
-                  Request a Service
-                  <Send className="h-5 w-5" />
+                  <span className="whitespace-nowrap">Request Statistical or Editorial Services</span>
+                  <Send className="h-5 w-5 flex-shrink-0" />
                 </Link>
               </div>
             </div>
@@ -247,14 +247,14 @@ export default function WBGHPage() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Specific Services</h3>
               <p className="text-gray-600 mb-6">
-                One-time support for statistics, editing, or manuscript development
+                Expert statistical analysis, scientific editing, manuscript formatting, and publication support tailored to your research needs.
               </p>
               <Link
                 href="/wbgh/services"
-                className="inline-flex items-center gap-2 px-8 py-3 bg-teal-600 text-white rounded-lg font-semibold hover:bg-teal-700 transition-colors w-full justify-center"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-teal-600 text-white rounded-lg font-semibold hover:bg-teal-700 transition-colors w-full justify-center text-sm sm:text-base"
               >
-                Request a Service
-                <Send className="h-5 w-5" />
+                <span className="whitespace-nowrap">Request Statistical or Editorial Services</span>
+                <Send className="h-5 w-5 flex-shrink-0" />
               </Link>
             </div>
           </div>
