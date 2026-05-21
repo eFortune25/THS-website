@@ -260,10 +260,12 @@ export default function WBGHPage() {
                 {/* CTA Button */}
                 <div>
                   <Link
-                    href="#"
+                    href="https://www.linkedin.com/in/hkyumo"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-all shadow-lg group"
                   >
-                    Learn More About Our Mission
+                    Connect on LinkedIn
                     <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </div>
