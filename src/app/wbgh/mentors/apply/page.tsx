@@ -43,7 +43,7 @@ export default function MentorApplicationPage() {
         expertise: formData.expertise,
         publication_count: formData.publications,
         mentorship_areas: formData.mentorshipAreas,
-        linkedin_url: formData.linkedIn,
+        linkedin_url: formData.linkedIn || undefined,
         languages: formData.languages,
       };
 
