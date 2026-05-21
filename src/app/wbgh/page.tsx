@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { WBGHLogo } from "@/components/wbgh/WBGHLogo";
 import { ServiceCard } from "@/components/wbgh/ServiceCard";
 import { StepCard } from "@/components/wbgh/StepCard";
@@ -176,10 +177,14 @@ export default function WBGHPage() {
               <div className="flex justify-center lg:justify-end">
                 <div className="relative">
                   <div className="w-72 h-72 sm:w-80 sm:h-80 rounded-2xl bg-gradient-to-br from-blue-100 to-teal-100 shadow-xl overflow-hidden">
-                    {/* Placeholder for founder photo */}
-                    <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-600 to-teal-600">
-                      <Users className="w-32 h-32 text-white opacity-50" />
-                    </div>
+                    <Image
+                      src="/images/wbgh/founder.jpg"
+                      alt="Dr. Habakkuk Yumo, Founder of WBGH"
+                      width={320}
+                      height={320}
+                      className="w-full h-full object-cover"
+                      priority
+                    />
                   </div>
                   {/* Decorative element */}
                   <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-blue-600 rounded-full opacity-10 -z-10" />
