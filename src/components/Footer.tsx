@@ -24,7 +24,7 @@ export function Footer() {
           {/* Company Info */}
           <div>
             <Link href="/" className="inline-block mb-4">
-              <Logo className="h-20 w-20" variant="light" />
+              <Logo className="h-16 w-auto" variant="light" />
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
               A U.S.-based public health and research consulting firm committed to solving complex public health challenges in complex environments.
