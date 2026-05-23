@@ -48,7 +48,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Location</h3>
-                    <p className="text-gray-600">United States</p>
+                    <p className="text-gray-600">Dallas, TX, United States</p>
                   </div>
                 </div>
 
