@@ -14,6 +14,7 @@ import {
   Target,
   CheckCircle,
   ArrowRight,
+  Globe,
 } from "lucide-react";
 
 export default function WBGHPage() {
@@ -58,6 +59,45 @@ export default function WBGHPage() {
             A global mentorship and publication support platform helping researchers transform ideas,
             theses, dissertations, and manuscripts into peer-reviewed publications.
           </p>
+
+          {/* Bilingual Support Banner */}
+          <div className="max-w-5xl mx-auto mb-12">
+            <div className="bg-white/95 backdrop-blur-md rounded-2xl p-8 shadow-2xl border-2 border-teal-400">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <Globe className="h-8 w-8 text-teal-600" />
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
+                  Bilingual Mentorship & Publication Support
+                </h2>
+              </div>
+              
+              <p className="text-base sm:text-lg text-gray-700 text-center leading-relaxed mb-6">
+                WBGH provides mentorship, scientific editing, statistical consulting, and publication support in both <span className="font-semibold text-blue-700">English and French</span>. We proudly support Anglophone and Francophone researchers worldwide, helping them transform theses, dissertations, and research manuscripts into peer-reviewed publications.
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="flex items-start gap-3 bg-gradient-to-br from-blue-50 to-teal-50 rounded-lg p-4">
+                  <CheckCircle className="h-6 w-6 text-teal-600 flex-shrink-0 mt-0.5" />
+                  <p className="text-gray-800 font-medium">
+                    Mentorship in English and French
+                  </p>
+                </div>
+                
+                <div className="flex items-start gap-3 bg-gradient-to-br from-blue-50 to-teal-50 rounded-lg p-4">
+                  <CheckCircle className="h-6 w-6 text-teal-600 flex-shrink-0 mt-0.5" />
+                  <p className="text-gray-800 font-medium">
+                    Support for Anglophone and Francophone researchers
+                  </p>
+                </div>
+                
+                <div className="flex items-start gap-3 bg-gradient-to-br from-blue-50 to-teal-50 rounded-lg p-4">
+                  <CheckCircle className="h-6 w-6 text-teal-600 flex-shrink-0 mt-0.5" />
+                  <p className="text-gray-800 font-medium">
+                    Guidance for publication in national and international journals
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
           {/* Three CTA Cards */}
           <div className="max-w-6xl mx-auto mb-12">
@@ -208,6 +248,9 @@ export default function WBGHPage() {
                   </p>
                   <p>
                     Having personally experienced the challenges of transforming academic research into scientific publications, he created The Writing Bridge in Global Health to help researchers—especially those from low- and middle-income countries—navigate the journey from idea to publication through mentorship, scientific guidance, and practical support.
+                  </p>
+                  <p className="bg-gradient-to-r from-blue-50 to-teal-50 border-l-4 border-teal-500 rounded-r-lg p-4">
+                    <span className="font-semibold text-gray-900">As a bilingual global health researcher and mentor fluent in English and French</span>, Dr. Yumo is committed to helping researchers overcome language barriers and successfully publish their work in high-quality scientific journals.
                   </p>
                 </div>
 
