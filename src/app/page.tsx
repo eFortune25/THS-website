@@ -9,7 +9,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">Transatlantic Health Solutions, LLC</h1>
           <p className="mt-4 text-xl text-teal-100 max-w-3xl">
-            Building impactful health solutions across continents.
+            Building Sustainable Health Solutions across continents.
           </p>
         </div>
       </section>
