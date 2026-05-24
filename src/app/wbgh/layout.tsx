@@ -141,7 +141,6 @@ export default function WBGHLayout({
                     "@type": "Service",
                     name: "Scientific Editing",
                     description: "Professional scientific manuscript editing services",
-                    priceRange: "$75-$300",
                   },
                 },
                 {
@@ -150,7 +149,6 @@ export default function WBGHLayout({
                     "@type": "Service",
                     name: "Statistical Analysis",
                     description: "Expert statistical analysis and consultation",
-                    priceRange: "$150-$750+",
                   },
                 },
                 {
@@ -160,7 +158,6 @@ export default function WBGHLayout({
                     name: "Manuscript Development & Publication Support",
                     description:
                       "Comprehensive manuscript development and publication support",
-                    priceRange: "$300-$1,500+",
                   },
                 },
                 {

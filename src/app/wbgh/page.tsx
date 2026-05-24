@@ -546,54 +546,6 @@ export default function WBGHPage() {
             </div>
           </div>
 
-          {/* Typical Pricing Ranges */}
-          <div className="mb-16">
-            <h3 className="text-3xl font-bold text-gray-900 mb-10 text-center">
-              Typical Pricing Ranges
-            </h3>
-            <div className="max-w-4xl mx-auto">
-              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-                <div className="overflow-x-auto">
-                  <table className="w-full">
-                    <thead className="bg-gradient-to-r from-blue-600 to-teal-600 text-white">
-                      <tr>
-                        <th className="px-6 py-4 text-left font-semibold">Service</th>
-                        <th className="px-6 py-4 text-left font-semibold">Typical Range (USD)</th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-gray-200">
-                      <tr className="hover:bg-blue-50 transition-colors">
-                        <td className="px-6 py-4 text-gray-900">Scientific Editing</td>
-                        <td className="px-6 py-4 text-gray-700">$75 – $300</td>
-                      </tr>
-                      <tr className="hover:bg-blue-50 transition-colors">
-                        <td className="px-6 py-4 text-gray-900">Statistical Analysis</td>
-                        <td className="px-6 py-4 text-gray-700">$150 – $750+</td>
-                      </tr>
-                      <tr className="hover:bg-blue-50 transition-colors">
-                        <td className="px-6 py-4 text-gray-900">Manuscript Development & Publication Support</td>
-                        <td className="px-6 py-4 text-gray-700">$300 – $1,500+</td>
-                      </tr>
-                      <tr className="hover:bg-blue-50 transition-colors">
-                        <td className="px-6 py-4 text-gray-900">Individual Mentorship Programs</td>
-                        <td className="px-6 py-4 text-gray-700 font-semibold">Custom Quotation</td>
-                      </tr>
-                      <tr className="hover:bg-blue-50 transition-colors">
-                        <td className="px-6 py-4 text-gray-900">Institutional / Research Team Support</td>
-                        <td className="px-6 py-4 text-gray-700 font-semibold">Custom Quotation</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div className="bg-blue-50 px-6 py-4 border-t border-blue-100">
-                  <p className="text-sm text-gray-700 italic">
-                    <strong>Note:</strong> The final quotation depends on project complexity, scope of work, timeline, and support requirements.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
           {/* Highlight Box */}
           <div className="max-w-3xl mx-auto">
             <div className="bg-gradient-to-br from-blue-600 to-teal-600 rounded-2xl shadow-2xl p-8 sm:p-12 text-white text-center">
