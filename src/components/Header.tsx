@@ -12,6 +12,7 @@ const navigation = [
   { name: "Where We Work", href: "/where-we-work" },
   { name: "Our Experts", href: "/experts" },
   { name: "WBGH", href: "/wbgh", highlight: true },
+  { name: "Blog", href: "/blog" },
   { name: "Work With Us", href: "/careers" },
   { name: "Contact", href: "/contact" },
 ];
