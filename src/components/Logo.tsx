@@ -10,8 +10,8 @@ export function Logo({ className = "" }: LogoProps) {
     <Image
       src="/images/logo.png"
       alt="Transatlantic Health Solutions"
-      width={120}
-      height={120}
+      width={150}
+      height={150}
       className={className}
       priority
     />

@@ -25,7 +25,7 @@ export function Header() {
         <div className="flex h-24 items-center justify-between">
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5">
-              <Logo className="h-16 w-16" variant="light" />
+              <Logo className="h-20 w-20" variant="light" />
             </Link>
           </div>
           <div className="flex lg:hidden">
