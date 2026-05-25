@@ -111,7 +111,7 @@ export default function LeadershipPage() {
                 </div>
                 <div className="space-y-3">
                   <a
-                    href="https://www.linkedin.com/in/habakkuk-yumo/"
+                    href="https://www.linkedin.com/in/hkyumo"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 w-full px-4 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors shadow-md hover:shadow-lg"
