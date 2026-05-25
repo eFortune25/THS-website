@@ -100,12 +100,12 @@ export default function LeadershipPage() {
             {/* Headshot and Contact */}
             <div className="lg:col-span-1">
               <div className="sticky top-24">
-                <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl mb-6">
+                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-xl mb-6 bg-gray-100">
                   <Image
                     src="/images/dr-yumo.jpg"
                     alt="Dr. Habakkuk Yumo"
                     fill
-                    className="object-cover"
+                    className="object-contain"
                     priority
                   />
                 </div>
