@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { WBGHLogo } from "@/components/wbgh/WBGHLogo";
 import { ServiceCard } from "@/components/wbgh/ServiceCard";
 import { StepCard } from "@/components/wbgh/StepCard";
@@ -210,120 +209,53 @@ export default function WBGHPage() {
             Meet the Founder
           </h2>
           
-          <div className="max-w-6xl mx-auto">
-            {/* Two-column layout on desktop, stacked on mobile */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-              {/* Founder Photo - Left column on desktop, top on mobile */}
-              <div className="flex justify-center lg:justify-end">
-                <div className="relative">
-                  <div className="w-72 h-96 sm:w-80 sm:h-[28rem] rounded-2xl bg-gradient-to-br from-blue-100 to-teal-100 shadow-xl overflow-hidden">
-                    <Image
-                      src="/images/wbgh/founder.jpg"
-                      alt="Dr. Habakkuk Yumo, Founder of WBGH"
-                      width={320}
-                      height={448}
-                      className="w-full h-full object-contain"
-                      priority
-                    />
-                  </div>
-                  {/* Decorative element */}
-                  <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-blue-600 rounded-full opacity-10 -z-10" />
-                </div>
+          <div className="max-w-4xl mx-auto">
+            <div className="space-y-6">
+              <div className="text-center">
+                <h3 className="text-3xl font-bold text-gray-900 mb-2">
+                  Dr. Habakkuk Yumo, MD, MScIH, PhD
+                </h3>
+                <p className="text-lg text-blue-700 font-medium mb-6">
+                  Founder of The Writing Bridge in Global Health (WBGH)
+                </p>
               </div>
 
-              {/* Biography and Credentials - Right column on desktop, bottom on mobile */}
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-3xl font-bold text-gray-900 mb-2">
-                    Dr. Habakkuk Yumo
-                  </h3>
-                  <p className="text-lg text-blue-700 font-medium mb-4">
-                    Public Health Physician, Global Health Researcher, and Founder of The Writing Bridge in Global Health (WBGH)
-                  </p>
-                </div>
+              <div className="text-gray-700 leading-relaxed space-y-4 text-center max-w-3xl mx-auto">
+                <p>
+                  Dr. Habakkuk Yumo is a Public Health Physician and Global Health Scholar with more than 15 years of international experience in infectious diseases, health systems strengthening, implementation science, and public health research. He has worked or collaborated with leading organizations including the CDC, WHO, The Global Fund, UNICEF, USAID, UNDP, and other international partners across Africa and globally.
+                </p>
+                <p>
+                  Having personally experienced the challenges of transforming academic research into scientific publications, he created The Writing Bridge in Global Health to help researchers—especially those from low- and middle-income countries—navigate the journey from idea to publication through mentorship, scientific guidance, and practical support.
+                </p>
+                <p className="bg-gradient-to-r from-blue-50 to-teal-50 border-l-4 border-teal-500 rounded-r-lg p-4 text-left">
+                  <span className="font-semibold text-gray-900">As a bilingual global health researcher and mentor fluent in English and French</span>, Dr. Yumo is committed to helping researchers overcome language barriers and successfully publish their work in high-quality scientific journals.
+                </p>
+              </div>
 
-                <div className="text-gray-700 leading-relaxed space-y-4">
-                  <p>
-                    Dr. Habakkuk Yumo is a Public Health Physician and Global Health Scholar with more than 15 years of international experience in infectious diseases, health systems strengthening, implementation science, and public health research. He has worked or collaborated with leading organizations including the CDC, WHO, The Global Fund, UNICEF, USAID, UNDP, and other international partners across Africa and globally.
-                  </p>
-                  <p>
-                    Having personally experienced the challenges of transforming academic research into scientific publications, he created The Writing Bridge in Global Health to help researchers—especially those from low- and middle-income countries—navigate the journey from idea to publication through mentorship, scientific guidance, and practical support.
-                  </p>
-                  <p className="bg-gradient-to-r from-blue-50 to-teal-50 border-l-4 border-teal-500 rounded-r-lg p-4">
-                    <span className="font-semibold text-gray-900">As a bilingual global health researcher and mentor fluent in English and French</span>, Dr. Yumo is committed to helping researchers overcome language barriers and successfully publish their work in high-quality scientific journals.
-                  </p>
+              {/* Quote Box */}
+              <div className="bg-gradient-to-br from-blue-600 to-teal-600 text-white rounded-xl p-8 shadow-lg">
+                <div className="mb-4 flex justify-center">
+                  <svg className="w-10 h-10 text-blue-200 opacity-50" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                  </svg>
                 </div>
+                <p className="text-lg italic leading-relaxed mb-4 text-center">
+                  "Too much valuable research remains unpublished. My goal is to help researchers transform their ideas, theses, dissertations, and manuscripts into publications that can inform policy, practice, and global health outcomes."
+                </p>
+                <p className="text-blue-100 font-medium text-center">
+                  — Dr. Habakkuk Yumo
+                </p>
+              </div>
 
-                {/* Highlights */}
-                <div className="bg-blue-50 rounded-xl p-6 border border-blue-100">
-                  <h4 className="font-semibold text-gray-900 mb-3">Highlights:</h4>
-                  <ul className="space-y-2 text-gray-700">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
-                      <span>MD (Doctor of Medicine)</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
-                      <span>PhD Medical Research-International Health</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
-                      <span>MSc International Health</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
-                      <span>University Diploma in Epidemiology</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
-                      <span>Author of multiple peer-reviewed publications</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
-                      <span>Reviewer and editor in several peer-reviewed journals</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
-                      <span>Extensive experience in HIV, TB, implementation science, and health systems strengthening</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
-                      <span>Research, evaluation, and technical leadership experience across multiple countries</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
-                      <span>Mentor and advisor to researchers and public health professionals</span>
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Quote Box */}
-                <div className="bg-gradient-to-br from-blue-600 to-teal-600 text-white rounded-xl p-8 shadow-lg">
-                  <div className="mb-4">
-                    <svg className="w-10 h-10 text-blue-200 opacity-50" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-                    </svg>
-                  </div>
-                  <p className="text-lg italic leading-relaxed mb-4">
-                    "Too much valuable research remains unpublished. My goal is to help researchers transform their ideas, theses, dissertations, and manuscripts into publications that can inform policy, practice, and global health outcomes."
-                  </p>
-                  <p className="text-blue-100 font-medium">
-                    — Founder, WBGH
-                  </p>
-                </div>
-
-                {/* CTA Button */}
-                <div>
-                  <Link
-                    href="https://www.linkedin.com/in/hkyumo"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-all shadow-lg group"
-                  >
-                    Connect on LinkedIn
-                    <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                  </Link>
-                </div>
+              {/* CTA Button */}
+              <div className="flex justify-center pt-4">
+                <Link
+                  href="/leadership"
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-teal-700 text-white rounded-lg font-semibold hover:bg-teal-800 transition-all shadow-lg group text-lg"
+                >
+                  Learn More About Dr. Yumo
+                  <ArrowRight className="h-6 w-6 group-hover:translate-x-1 transition-transform" />
+                </Link>
               </div>
             </div>
           </div>
