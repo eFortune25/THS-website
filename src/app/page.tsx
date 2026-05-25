@@ -62,10 +62,10 @@ export default function Home() {
               
               <div className="prose prose-lg max-w-none text-gray-600">
                 <p className="mb-4">
-                  Global health physician, implementation scientist, and researcher with more than 15 years of experience supporting governments, international organizations, and development partners across Africa and globally.
+                  Public health physician, researcher, implementation scientist, and international consultant with over 15 years of experience in clinical care, health systems strengthening, and strategic design, implementation, and management of public health programs. Dr. Yumo began his career as a general practitioner in a rural district hospital in Africa, where he witnessed firsthand the challenges faced by underserved communities and fragile health systems.
                 </p>
                 <p>
-                  Dr. Yumo has collaborated with organizations including CDC, WHO, The Global Fund, UNDP, FHI 360, Expertise France, and Ministries of Health to strengthen health systems, improve program performance, and translate evidence into measurable public health impact.
+                  He has collaborated with major international partners including the Global Fund, CDC, WHO, UNDP, UNICEF, FHI 360, Expertise France, ICF, and national Ministries of Health to strengthen health systems, improve program performance, and translate evidence into measurable public health impact.
                 </p>
               </div>
 

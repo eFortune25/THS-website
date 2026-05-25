@@ -222,7 +222,7 @@ export default function WBGHPage() {
 
               <div className="text-gray-700 leading-relaxed space-y-4 text-center max-w-3xl mx-auto">
                 <p>
-                  Dr. Habakkuk Yumo is a Public Health Physician and Global Health Scholar with more than 15 years of international experience in infectious diseases, health systems strengthening, implementation science, and public health research. He has worked or collaborated with leading organizations including the CDC, WHO, The Global Fund, UNICEF, USAID, UNDP, and other international partners across Africa and globally.
+                  Dr. Habakkuk Yumo is a Public Health Physician, researcher, implementation scientist, program evaluation specialist, and international consultant with over 15 years of experience in clinical care, health systems strengthening, and the strategic design, implementation, and management of public health programs across low- and middle-income countries (LMICs). He began his career as a general practitioner in a rural district hospital in Africa, where he witnessed firsthand the challenges faced by underserved communities and fragile health systems. He has collaborated with leading organizations including the Global Fund, CDC, WHO, UNDP, UNICEF, FHI 360, Expertise France, ICF, and other international partners across Africa and globally.
                 </p>
                 <p>
                   Having personally experienced the challenges of transforming academic research into scientific publications, he created The Writing Bridge in Global Health to help researchers—especially those from low- and middle-income countries—navigate the journey from idea to publication through mentorship, scientific guidance, and practical support.
