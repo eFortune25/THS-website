@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { Lightbulb, Shield, Leaf } from "lucide-react";
+import Link from "next/link";
+import { Lightbulb, Shield, Leaf, ArrowRight } from "lucide-react";
 
 export default function Home() {
   return (
@@ -37,6 +38,46 @@ export default function Home() {
                 fill
                 className="object-cover"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Leadership */}
+      <section className="py-16 sm:py-24 bg-gradient-to-br from-gray-50 to-teal-50">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">Leadership</h2>
+          </div>
+          <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8 sm:p-12 border border-teal-100">
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
+                  Dr. Habakkuk Yumo, MD, MScIH, PhD
+                </h3>
+                <p className="text-lg text-teal-700 font-medium mb-6">
+                  Founder & Principal Consultant
+                </p>
+              </div>
+              
+              <div className="prose prose-lg max-w-none text-gray-600">
+                <p className="mb-4">
+                  Global health physician, implementation scientist, and researcher with more than 15 years of experience supporting governments, international organizations, and development partners across Africa and globally.
+                </p>
+                <p>
+                  Dr. Yumo has collaborated with organizations including CDC, WHO, The Global Fund, UNDP, FHI 360, Expertise France, and Ministries of Health to strengthen health systems, improve program performance, and translate evidence into measurable public health impact.
+                </p>
+              </div>
+
+              <div className="pt-4">
+                <Link
+                  href="/leadership"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-teal-700 text-white font-medium rounded-lg hover:bg-teal-800 transition-colors shadow-md hover:shadow-lg"
+                >
+                  Learn More About Our Leadership
+                  <ArrowRight className="h-5 w-5" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
