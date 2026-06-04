@@ -57,6 +57,11 @@ export default function MenteeApplicationPage() {
       if (result.success) {
         setUploadProgress(100);
         setIsSubmitted(true);
+        
+        // Track Meta Lead event
+        if (typeof window !== 'undefined' && typeof (window as any).fbq === 'function') {
+          (window as any).fbq('track', 'Lead');
+        }
       } else {
         setError(result.error || "Failed to submit application. Please try again.");
         setIsSubmitting(false);
