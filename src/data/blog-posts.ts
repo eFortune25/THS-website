@@ -725,6 +725,7 @@ By doing so, we can harness AI to strengthen health systems, improve care delive
     <a 
       href="/downloads/public-health-research-existing-data.pdf" 
       download
+      onclick="fbq('trackCustom', 'PDFDownload', {content_name: 'Public Health Research Article'});"
       class="inline-flex items-center justify-center px-8 py-4 bg-teal-700 text-white font-semibold rounded-lg hover:bg-teal-800 transition-colors shadow-lg hover:shadow-xl"
     >
       <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
