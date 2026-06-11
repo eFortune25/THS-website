@@ -5,6 +5,7 @@ import { Calendar, Clock, User, ArrowLeft } from "lucide-react";
 import { getPostBySlug, getRelatedPosts, blogPosts } from "@/data/blog-posts";
 import { BlogCard } from "@/components/blog/BlogCard";
 import { BlogCTA } from "@/components/blog/BlogCTA";
+import { marked } from "marked";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -68,6 +69,9 @@ export default async function BlogPostPage({ params }: PageProps) {
   }
 
   const relatedPosts = getRelatedPosts(post, 3);
+  
+  // Convert Markdown to HTML
+  const htmlContent = await marked(post.content);
 
   const categoryColors: Record<string, string> = {
     "Global Health": "bg-blue-100 text-blue-700",
@@ -155,7 +159,7 @@ export default async function BlogPostPage({ params }: PageProps) {
               prose-ol:my-6 prose-ol:list-decimal prose-ol:pl-6
               prose-li:text-gray-700 prose-li:my-2
               prose-blockquote:border-l-4 prose-blockquote:border-teal-600 prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-gray-700"
-            dangerouslySetInnerHTML={{ __html: post.content }}
+            dangerouslySetInnerHTML={{ __html: htmlContent }}
           />
 
           {/* Tags */}
